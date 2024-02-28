@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.</title>
+    <link rel="stylesheet" href="style4.css">
+    <script src="script4.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+Buhid&family=Space+Grotesk:wght@300..700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="left">
+            <span class="apple-logo">&#63743;</span> 
+            <strong>Finder</strong>
+            <span>File</span>
+            <span>Edit</span>
+            <span>View</span>
+            <span>Go</span>
+            <span>Window</span>
+            <span>Help</span>
+        </div>
+        <div class="right">
+            <i class="fa fa-search"></i>
+            <span id="current-time"></span>
+        </div>
+    </header>
+
+    <div class="bar">
+        <div class="dots">
+            <span class="dot" style="background:#bbb;"></span>
+            <span class="dot" style="background:#bbb;"></span>
+            <span class="dot" style="background:#bbb;"></span>
+        </div>
+    </div>
+
+     <div id="terminal">
+        <div id="login">Last login: Thu Feb 22 20:31:49 Period<br><br>
+            <span class="press-enter">>Press the Enter key</span>
+            <span class="tap-screen">>Tap the screen</span><br>
+        </div>
+
+        <div id="cursor" class="cursor"></div>
+        
+    </div>
+
+    <script>
+        function updateTime() {
+     const now = new Date();
+     const timeString = now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}) + " " + now.toLocaleDateString();
+     document.getElementById('current-time').textContent = timeString;
+ }
+ 
+ setInterval(updateTime, 1000);
+ updateTime();
+         </script>
+
+    </body>
+</html>

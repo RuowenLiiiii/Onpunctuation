@@ -1,0 +1,176 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #2a2727;
+    color: white;
+    font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  /* text-shadow: 0 0 2px ; */
+}
+
+#login {
+    margin-bottom: 20px; 
+}
+
+#terminal {
+    padding: 20px;
+    /* text-shadow: 0 0 5px white; */
+}
+
+.line {
+    white-space: pre-wrap;
+}
+
+.cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background-color: lime;
+    animation: blink-animation 1s steps(5, start) infinite;
+    margin-left: 0px;
+    margin-bottom: 5px;
+
+}
+
+
+.special-message {
+    color: lime;
+    /* text-shadow: 0 0 5px lime; */
+}
+
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+
+.hover-effect:hover {
+    color: #fe0000; 
+    /* text-shadow: 0 0 8px #fe0000; */
+}
+
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+strong{
+    color: #bbb;
+}
+
+header {
+    text-shadow: none;
+    background: #181716;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    height: 30px; 
+    font-family: "Helvetica", sans-serif;
+    font-size: 14px;
+    margin: 0; 
+    padding: 10px 0; 
+    box-sizing: border-box; 
+}
+
+.header .left, .header .right {
+    display: flex;
+    align-items: center;
+    color: #bbb;
+}
+
+span, .apple-logo, .search-icon, #current-time {
+    margin: 0 15px; 
+    color: #bbb;
+}
+
+.apple-logo, .search-icon {
+    font-size: 18px;
+    color: #bbb;
+}
+
+#current-time {
+    margin-left: 15px;
+    color: #bbb;
+}
+
+
+
+.bar {
+    background-color: #2d2d2d; 
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.dots {
+    display: flex; 
+    align-items: center;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb; 
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: -10px; 
+}
+
+.tap-screen {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .press-enter {
+        display: none; 
+    }
+    .tap-screen {
+        display: block; 
+    }
+
+
+    .container {
+        width: 80%; 
+        height: auto; 
+        min-height: 300px; 
+    }
+
+    #terminal {
+        height: auto;
+        min-height: 150px; 
+    }
+
+    body, .content, #terminal {
+        font-size: 14px; 
+    }
+
+    .top, .hover-effect {
+        padding: 10px; 
+    }
+
+    header span, header strong {
+        font-size: 12px; 
+        margin: 0 5px; 
+      }
+    
+      .header .left, .header .right {
+        padding: 5px 0; 
+      }
+
+      
+    }
+
+
